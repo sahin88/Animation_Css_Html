@@ -1,0 +1,16 @@
+{
+  "name": "anim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "breathe.js",
+  "scripts": {
+    "deploy": "gh-pages -d /home/alex/anim/"
+  },
+  "keywords": [],
+  "homepage":"https://sahin88.github.io/anm/",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
