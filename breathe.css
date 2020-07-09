@@ -1,0 +1,154 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: 0px;
+}
+.title {
+  position: relative;
+  top: 15px;
+  left: 45%;
+  z-index: 2;
+  color: aliceblue;
+}
+
+body {
+  position: relative;
+  color: blueviolet;
+  background-image: url("background_app.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.circle {
+  position: relative;
+  left: 40%;
+  top: 200px;
+  background: conic-gradient(#fe4164 40%, #20214f 0 70%, white 0);
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  z-index: 1;
+}
+
+.scircle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 280px;
+  height: 280px;
+  border-radius: 140px;
+  background-color: #2425a2;
+  z-index: 1;
+}
+.txt {
+  text-align: center;
+  position: relative;
+  top: 120px;
+  left: 20px;
+  color: whitesmoke;
+}
+
+.circle.growing {
+  animation: pluton 3.5s linear forwards;
+}
+.circle.shrinking {
+  animation: mars 3.5s linear forwards;
+}
+
+.bars {
+  position: absolute;
+  top: -55px;
+  left: 135px;
+  width: 10px;
+  height: 190px;
+  z-index: 2;
+  animation: neptun 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+}
+
+.ball {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.bars_2 {
+  position: absolute;
+  top: -95px;
+  left: 135px;
+  width: 10px;
+  height: 230px;
+  z-index: 2;
+  animation: neptun 12s linear forwards infinite;
+  transform-origin: bottom center;
+}
+
+.ball_2 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #fe4164;
+}
+
+.bars_3 {
+  position: absolute;
+  top: -145px;
+  left: 135px;
+  width: 10px;
+  height: 280px;
+  z-index: 2;
+  animation: neptun 20s linear forwards infinite;
+  transform-origin: bottom center;
+}
+
+.ball_3 {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #20214f;
+}
+
+@keyframes pluton {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+@keyframes mars {
+  from {
+    transform: scale(1.2);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes neptun {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
