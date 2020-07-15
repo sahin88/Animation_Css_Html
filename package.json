@@ -1,15 +1,15 @@
 {
-  "name": "anim",
+  "name": "breathe_appp",
   "version": "1.0.0",
   "description": "",
   "main": "breathe.js",
   "scripts": {
-    "deploy": "gh-pages -d /home/alex/anim/"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "homepage":"https://sahin88.github.io/anm/",
   "author": "",
   "license": "ISC",
+  "homepage": "https://sahin88,github.io/animations",
   "dependencies": {
     "gh-pages": "^3.1.0"
   }

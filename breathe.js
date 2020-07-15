@@ -8,15 +8,16 @@ const pause = 7500 / 5;
 IntervalFunction();
 
 function IntervalFunction() {
-  text.textContent = " Hakiki Mürsit Bilimdedir! ";
+  text.textContent =
+    " Two things are infinite: the universe and human stupidity;  ";
   container.className = "circle growing";
 
   setTimeout(() => {
-    text.textContent = "M.Kemal Atatürk";
+    text.textContent = "Albert Einstein";
     container.className = "circle shrinking";
 
     setTimeout(() => {
-      text.textContent = "If my words are aginst Science,choose Science!";
+      text.textContent = "and I'm not sure about the universe.”!";
     }, pause);
   }, half_cycle);
 }
