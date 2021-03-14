@@ -3,7 +3,7 @@
 
 
 
-This is a basic animationapp
+This is a basic Animation App
 
 
 ## Features
